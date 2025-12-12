@@ -1,4 +1,4 @@
--- rewrite of https://sirius.menu/sense
+-- https://sirius.menu/sense
 
 local run_service = game:GetService("RunService")
 local players = game:GetService("Players")
