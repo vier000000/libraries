@@ -8,8 +8,6 @@ local current_camera = workspace.CurrentCamera
 
 local viewport_size = current_camera.ViewportSize
 
-local container = Instance.new("Folder", gethui())
-
 local floor = math.floor
 local round = math.round
 local sin = math.sin
@@ -149,12 +147,6 @@ local esp_object = {} do
         self.child_count = 0
         self.bin = {}
         self.drawings = {
-            box_3d = {
-                {self:draw_object("Line", {Thickness = 1, Visible = false}), self:draw_object("Line", {Thickness = 1, Visible = false}), self:draw_object("Line", {Thickness = 1, Visible = false})},
-                {self:draw_object("Line", {Thickness = 1, Visible = false}), self:draw_object("Line", {Thickness = 1, Visible = false}), self:draw_object("Line", {Thickness = 1, Visible = false})},
-                {self:draw_object("Line", {Thickness = 1, Visible = false}), self:draw_object("Line", {Thickness = 1, Visible = false}), self:draw_object("Line", {Thickness = 1, Visible = false})},
-                {self:draw_object("Line", {Thickness = 1, Visible = false}), self:draw_object("Line", {Thickness = 1, Visible = false}), self:draw_object("Line", {Thickness = 1, Visible = false})}
-            },
 		    visible = {
 			    tracer_outline = self:draw_object("Line", { Thickness = 3, Visible = false }),
 			    tracer = self:draw_object("Line", { Thickness = 1, Visible = false }),
